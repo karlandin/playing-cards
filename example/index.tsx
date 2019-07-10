@@ -9,6 +9,7 @@ import {
   spades2,
   hearts3,
   clubs4,
+  back2,
   shuffleCards,
 } from '../.';
 
@@ -25,6 +26,7 @@ const App = () => {
       <PlayingCard card={clubs4} caption={false} />
       <PlayingCard card={diamonds[11]} caption={true} />
       <PlayingCard card={diamonds[12]} />
+      <PlayingCard card={back2} />
 
       <h1>Full deck</h1>
       <div>

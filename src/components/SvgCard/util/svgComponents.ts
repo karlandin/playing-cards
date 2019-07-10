@@ -56,4 +56,7 @@ export const svgComponents: { [key: string]: React.FC } = {
   S11: svg.SpadesJackSvgComponent,
   S12: svg.SpadesQueenSvgComponent,
   S13: svg.SpadesKingSvgComponent,
+
+  B1: svg.Back1SvgComponent,
+  B2: svg.Back2SvgComponent,
 };

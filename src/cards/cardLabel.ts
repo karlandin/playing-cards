@@ -24,7 +24,11 @@ const valueEng: { [key: number]: string } = {
 };
 
 export const cardLabel: (card: ICard) => string = card => {
-  const v = valueEng[card.value];
-  const s = suitEng[card.suit];
-  return `${v} of ${s}`;
+  if (card.value && card.suit) {
+    const v = valueEng[card.value];
+    const s = suitEng[card.suit];
+    return `${v} of ${s}`;
+  } else {
+    return '';
+  }
 };
