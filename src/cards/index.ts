@@ -99,6 +99,9 @@ const spades13: ICard = {
   value: 13,
 };
 
+const back1: ICard = { id: 'B1', suit: 'none', color: 'none', value: 0 };
+const back2: ICard = { id: 'B2', suit: 'none', color: 'none', value: 0 };
+
 const clubs: ICard[] = [
   clubs1,
   clubs2,
@@ -222,4 +225,6 @@ export {
   spades11,
   spades12,
   spades13,
+  back1,
+  back2,
 };
