@@ -1,6 +1,6 @@
 {
   "name": "@karlandin/playing-cards",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/playing-cards.esm.js",
   "typings": "dist/index.d.ts",
@@ -10,7 +10,8 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --env=jsdom"
+    "test": "tsdx test --env=jsdom --passWithNoTests",
+    "prepublish": "yarn build"
   },
   "peerDependencies": {
     "react": ">=16"
