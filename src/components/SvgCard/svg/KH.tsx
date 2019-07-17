@@ -1,14 +1,15 @@
 import React from 'react';
+import { SvgCardProps } from './SvgCardProps';
 
-export const HeartsKingSvgComponent = () => (
+export const HeartsKingSvgComponent = ({ width, height }: SvgCardProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     className="card"
-    height="3.5in"
+    height={height}
     preserveAspectRatio="none"
     viewBox="-120 -168 240 336"
-    width="2.5in"
+    width={width}
   >
     <defs>
       <rect id="XHK" width="164.8" height="260.8" x="-82.4" y="-130.4"></rect>

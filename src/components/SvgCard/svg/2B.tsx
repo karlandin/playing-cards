@@ -1,13 +1,14 @@
 import React from 'react';
+import { SvgCardProps } from './SvgCardProps';
 
-export const Back2SvgComponent = () => (
+export const Back2SvgComponent = ({ width, height }: SvgCardProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="card"
-    height="3.5in"
+    height={height}
     preserveAspectRatio="none"
     viewBox="-120 -168 240 336"
-    width="2.5in"
+    width={width}
   >
     <defs>
       <pattern id="B2" width="6" height="6" patternUnits="userSpaceOnUse">
