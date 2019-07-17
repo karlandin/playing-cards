@@ -18,15 +18,28 @@ const App = () => {
 
   return (
     <div>
-      <h1>Cards</h1>
+      <div>
+        <h1>Size</h1>
+        <p> size = 'small' | 'medium' | 'large' | 'fill' </p>
+        <PlayingCard card={back2} size="small" />
+        <PlayingCard card={diamonds[11]} size="medium" />
+        <PlayingCard card={clubs4} size="large" />
+        <div
+          style={{ display: 'inline-block', width: '200px', height: '175px' }}
+        >
+          <PlayingCard card={diamonds[12]} size="fill" />
+        </div>
+      </div>
 
-      <PlayingCard card={diamonds1} caption={true} captionPosition="top" />
-      <PlayingCard card={spades2} caption={true} captionPosition="bottom" />
-      <PlayingCard card={hearts3} caption={true} />
-      <PlayingCard card={clubs4} caption={false} />
-      <PlayingCard card={diamonds[11]} caption={true} />
-      <PlayingCard card={diamonds[12]} />
-      <PlayingCard card={back2} />
+      <div>
+        <h1>Captions</h1>
+        <p> caption = true | false </p>
+        <p> captionPosition = 'bottom' | 'top' </p>
+
+        <PlayingCard card={diamonds1} />
+        <PlayingCard card={spades2} caption={true} captionPosition="bottom" />
+        <PlayingCard card={hearts3} caption={true} captionPosition="top" />
+      </div>
 
       <h1>Full deck</h1>
       <div>
@@ -39,7 +52,7 @@ const App = () => {
         </button>
       </div>
       {deck.map((item, index) => (
-        <PlayingCard key={index} card={item} caption={true} />
+        <PlayingCard key={index} size="small" card={item} caption={true} />
       ))}
     </div>
   );

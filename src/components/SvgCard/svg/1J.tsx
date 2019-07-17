@@ -1,14 +1,15 @@
 import React from 'react';
+import { SvgCardProps } from './SvgCardProps';
 
-export const Joker1SvgComponent = () => (
+export const Joker1SvgComponent = ({ width, height }: SvgCardProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     className="card"
-    height="3.5in"
+    height={height}
     preserveAspectRatio="none"
     viewBox="-120 -168 240 336"
-    width="2.5in"
+    width={width}
   >
     <symbol id="J11" preserveAspectRatio="none" viewBox="0 0 1300 2000">
       <path

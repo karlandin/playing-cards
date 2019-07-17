@@ -1,6 +1,7 @@
 import * as svg from '../svg';
+import { SvgCardProps } from '../svg/SvgCardProps';
 
-export const svgComponents: { [key: string]: React.FC } = {
+export const svgComponents: { [key: string]: React.FC<SvgCardProps> } = {
   C1: svg.Clubs1SvgComponent,
   C2: svg.Clubs2SvgComponent,
   C3: svg.Clubs3SvgComponent,
